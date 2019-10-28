@@ -8,5 +8,6 @@ target 'MusicPlayer_cred' do
   # Pods for MusicPlayer_cred
 	pod 'AlamofireObjectMapper', '~> 5.2'
 	pod 'FSPagerView'
+	pod 'IQKeyboardManagerSwift'	
 
 end

@@ -69,7 +69,7 @@ class PlaylistViewController: UIViewController {
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.backgroundCover.addSubview(blurEffectView)
         coverImages.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "PagerCell")
-        coverImages.transformer = FSPagerViewTransformer(type: .overlap)
+        coverImages.transformer = FSPagerViewTransformer(type: .depth)
     }
     
     func refreshSlider(sliderValue:Float){
@@ -216,6 +216,12 @@ extension PlaylistViewController: FSPagerViewDataSource,FSPagerViewDelegate{
             cell.imageView?.imageFromServerURL(url, placeHolder: nil)
         }
         
+        let interaction = UIContextMenuInteraction(delegate: self)
+        cell.addInteraction(interaction)
+        
+        cell.layer.cornerRadius = 10.0
+        cell.clipsToBounds = true
+        
         return cell
     }
     
@@ -228,6 +234,7 @@ extension PlaylistViewController: FSPagerViewDataSource,FSPagerViewDelegate{
     func pagerView(_ pagerView: FSPagerView, didSelectItemAt index: Int) {
         validateAndPlay(index: index)
     }
+
 }
 
 // MARK: TableView data source functions
@@ -329,4 +336,29 @@ extension PlaylistViewController{
       let strDuration = String(format:"%02d:%02d", minutes, seconds)
       return strDuration
     }
+}
+
+extension PlaylistViewController: UIContextMenuInteractionDelegate {
+
+    func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configurationForMenuAtLocation location: CGPoint) -> UIContextMenuConfiguration? {
+
+        return UIContextMenuConfiguration(identifier: nil, previewProvider: nil, actionProvider: { suggestedActions in
+
+            return self.makeContextMenu()
+        })
+    }
+    
+    func makeContextMenu() -> UIMenu {
+
+        // Create a UIAction for sharing
+        let share = UIAction(title: "Buy now", image: UIImage(systemName: "square.and.arrow.up")) { action in
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "PaymentViewController") as! PaymentViewController
+            self.navigationController?.pushViewController(nextViewController, animated: true)
+        }
+
+        // Create and return a UIMenu with the share action
+        return UIMenu(title: "Main Menu", children: [share])
+    }
+    
 }

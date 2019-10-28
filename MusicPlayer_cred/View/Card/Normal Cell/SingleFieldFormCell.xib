@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SingleFieldFormCell" rowHeight="55" id="KGk-i7-Jjw" customClass="SingleFieldFormCell" customModule="BeerCraft" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inn-39-dKh">
+                        <rect key="frame" x="15" y="6" width="154" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NEp-Bp-sZl">
+                        <rect key="frame" x="15" y="27" width="343" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="fZf-1t-AxR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="NEp-Bp-sZl" secondAttribute="trailing" constant="16" id="5qg-vm-udo"/>
+                    <constraint firstItem="NEp-Bp-sZl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="6La-Vp-hAt"/>
+                    <constraint firstAttribute="trailing" secondItem="inn-39-dKh" secondAttribute="trailing" constant="205" id="8mB-Zt-lQg"/>
+                    <constraint firstItem="inn-39-dKh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="J33-w1-GBY"/>
+                    <constraint firstItem="NEp-Bp-sZl" firstAttribute="top" secondItem="inn-39-dKh" secondAttribute="bottom" constant="4" id="XAg-Aa-4vk"/>
+                    <constraint firstItem="inn-39-dKh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="yLe-SX-CA2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblName" destination="inn-39-dKh" id="asY-x1-PHE"/>
+                <outlet property="nameTf" destination="NEp-Bp-sZl" id="Ksg-tR-6Vv"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="100.78125"/>
+        </tableViewCell>
+    </objects>
+</document>

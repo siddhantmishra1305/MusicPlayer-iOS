@@ -4,25 +4,29 @@ PODS:
     - Alamofire (~> 4.7)
     - ObjectMapper (~> 3.4)
   - FSPagerView (0.8.3)
+  - IQKeyboardManagerSwift (6.5.1)
   - ObjectMapper (3.5.1)
 
 DEPENDENCIES:
   - AlamofireObjectMapper (~> 5.2)
   - FSPagerView
+  - IQKeyboardManagerSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireObjectMapper
     - FSPagerView
+    - IQKeyboardManagerSwift
     - ObjectMapper
 
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  IQKeyboardManagerSwift: 9ac7524fad9f9fe9a3b98c927e7772471ca546d2
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
 
-PODFILE CHECKSUM: d1450994c53a19ac4b5b5b3af43ff58a7dfdc133
+PODFILE CHECKSUM: f341b544b6f3a9ebfade8878cdc63d4f01d2dda1
 
 COCOAPODS: 1.7.1

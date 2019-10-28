@@ -57,4 +57,21 @@ extension UIViewController {
         self.navigationController?.view.backgroundColor = .clear
         self.navigationItem.setHidesBackButton(true, animated:true);
     }
+    
+}
+
+extension UIView{
+    func addLine(width: Double) {
+        let lineView = UIView()
+        lineView.backgroundColor = #colorLiteral(red: 0.9411764706, green: 0.4980392157, blue: 0.3529411765, alpha: 1)
+        lineView.translatesAutoresizingMaskIntoConstraints = false // This is important!
+        self.addSubview(lineView)
+        
+        let metrics = ["width" : NSNumber(value: width)]
+        let views = ["lineView" : lineView]
+        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[lineView]|", options:NSLayoutConstraint.FormatOptions(rawValue: 0), metrics:metrics, views:views))
+        
+        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[lineView(width)]|", options:NSLayoutConstraint.FormatOptions(rawValue: 0), metrics:metrics, views:views))
+        
+    }
 }

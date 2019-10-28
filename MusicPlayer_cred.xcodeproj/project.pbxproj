@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		53F72F91BE4A4756F7633C2D /* Pods_MusicPlayer_cred.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7DE64BC0F4FBB64E75268A1 /* Pods_MusicPlayer_cred.framework */; };
+		E225FAB423676D8900D9A2EB /* SavedPaymentMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = E225FAB223676D8900D9A2EB /* SavedPaymentMethods.swift */; };
+		E225FAB523676D8900D9A2EB /* SavedPaymentMethods.xib in Resources */ = {isa = PBXBuildFile; fileRef = E225FAB323676D8900D9A2EB /* SavedPaymentMethods.xib */; };
+		E225FAB923676EB500D9A2EB /* SavedCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = E225FAB823676EB500D9A2EB /* SavedCards.swift */; };
+		E225FABD2367700100D9A2EB /* CardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E225FABC2367700100D9A2EB /* CardTypes.swift */; };
 		E248BEE82361C7860078DA89 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248BEE72361C7860078DA89 /* ErrorViewController.swift */; };
 		E248BEED2361F5C60078DA89 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248BEEC2361F5C60078DA89 /* UIImage + Extension.swift */; };
 		E248BEF12361F9C40078DA89 /* SongPlaying.gif in Resources */ = {isa = PBXBuildFile; fileRef = E248BEF02361F9C40078DA89 /* SongPlaying.gif */; };
@@ -28,11 +32,22 @@
 		E25A64AC23614CFD0072C1F1 /* PlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25A64AA23614CFD0072C1F1 /* PlaylistCell.swift */; };
 		E25A64AD23614CFD0072C1F1 /* PlaylistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E25A64AB23614CFD0072C1F1 /* PlaylistCell.xib */; };
 		E25A64B023614FD70072C1F1 /* UIImageView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25A64AF23614FD70072C1F1 /* UIImageView + Extensions.swift */; };
+		E28D5CD9236771DE0066D440 /* MultipleFieldFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28D5CD4236771DE0066D440 /* MultipleFieldFormCell.swift */; };
+		E28D5CDA236771DE0066D440 /* MultipleFieldFormCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E28D5CD5236771DE0066D440 /* MultipleFieldFormCell.xib */; };
+		E28D5CDB236771DE0066D440 /* SingleFieldFormCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E28D5CD7236771DE0066D440 /* SingleFieldFormCell.xib */; };
+		E28D5CDC236771DE0066D440 /* SingleFieldFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28D5CD8236771DE0066D440 /* SingleFieldFormCell.swift */; };
+		E28D5CDE236772EE0066D440 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28D5CDD236772EE0066D440 /* PaymentViewController.swift */; };
+		E28D5CE0236772FD0066D440 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28D5CDF236772FD0066D440 /* AddCardViewController.swift */; };
+		E28D5CE223677BC00066D440 /* UITextField + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28D5CE123677BC00066D440 /* UITextField + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A4E1EF7FE99F2BBD654DA892 /* Pods-MusicPlayer_cred.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicPlayer_cred.debug.xcconfig"; path = "Target Support Files/Pods-MusicPlayer_cred/Pods-MusicPlayer_cred.debug.xcconfig"; sourceTree = "<group>"; };
 		CC53CE2FF41806E613BAE7D2 /* Pods-MusicPlayer_cred.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicPlayer_cred.release.xcconfig"; path = "Target Support Files/Pods-MusicPlayer_cred/Pods-MusicPlayer_cred.release.xcconfig"; sourceTree = "<group>"; };
+		E225FAB223676D8900D9A2EB /* SavedPaymentMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPaymentMethods.swift; sourceTree = "<group>"; };
+		E225FAB323676D8900D9A2EB /* SavedPaymentMethods.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedPaymentMethods.xib; sourceTree = "<group>"; };
+		E225FAB823676EB500D9A2EB /* SavedCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCards.swift; sourceTree = "<group>"; };
+		E225FABC2367700100D9A2EB /* CardTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypes.swift; sourceTree = "<group>"; };
 		E248BEE72361C7860078DA89 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		E248BEEC2361F5C60078DA89 /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
 		E248BEF02361F9C40078DA89 /* SongPlaying.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SongPlaying.gif; sourceTree = "<group>"; };
@@ -55,6 +70,13 @@
 		E25A64AA23614CFD0072C1F1 /* PlaylistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCell.swift; sourceTree = "<group>"; };
 		E25A64AB23614CFD0072C1F1 /* PlaylistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistCell.xib; sourceTree = "<group>"; };
 		E25A64AF23614FD70072C1F1 /* UIImageView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extensions.swift"; sourceTree = "<group>"; };
+		E28D5CD4236771DE0066D440 /* MultipleFieldFormCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleFieldFormCell.swift; sourceTree = "<group>"; };
+		E28D5CD5236771DE0066D440 /* MultipleFieldFormCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultipleFieldFormCell.xib; sourceTree = "<group>"; };
+		E28D5CD7236771DE0066D440 /* SingleFieldFormCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleFieldFormCell.xib; sourceTree = "<group>"; };
+		E28D5CD8236771DE0066D440 /* SingleFieldFormCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleFieldFormCell.swift; sourceTree = "<group>"; };
+		E28D5CDD236772EE0066D440 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		E28D5CDF236772FD0066D440 /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		E28D5CE123677BC00066D440 /* UITextField + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + Extensions.swift"; sourceTree = "<group>"; };
 		F7DE64BC0F4FBB64E75268A1 /* Pods_MusicPlayer_cred.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicPlayer_cred.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -85,6 +107,47 @@
 				CC53CE2FF41806E613BAE7D2 /* Pods-MusicPlayer_cred.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E225FAAF23676D1400D9A2EB /* SavedPaymentMethodsCell */ = {
+			isa = PBXGroup;
+			children = (
+				E225FAB223676D8900D9A2EB /* SavedPaymentMethods.swift */,
+				E225FAB323676D8900D9A2EB /* SavedPaymentMethods.xib */,
+			);
+			path = SavedPaymentMethodsCell;
+			sourceTree = "<group>";
+		};
+		E225FAB623676E9900D9A2EB /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				E225FAB823676EB500D9A2EB /* SavedCards.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		E225FAB723676EA100D9A2EB /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				E25A64A323600D5F0072C1F1 /* SongsDataModel.swift */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
+		E225FABA23676FE600D9A2EB /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				E225FABB23676FED00D9A2EB /* CardTypes */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		E225FABB23676FED00D9A2EB /* CardTypes */ = {
+			isa = PBXGroup;
+			children = (
+				E225FABC2367700100D9A2EB /* CardTypes.swift */,
+			);
+			path = CardTypes;
 			sourceTree = "<group>";
 		};
 		E248BEE92361C8500078DA89 /* Storyboard */ = {
@@ -126,6 +189,7 @@
 		E25A648523600C720072C1F1 /* MusicPlayer_cred */ = {
 			isa = PBXGroup;
 			children = (
+				E225FABA23676FE600D9A2EB /* Enums */,
 				E248BEFE236431690078DA89 /* AppDelegate */,
 				E25A649423600C740072C1F1 /* Info.plist */,
 				E248BEE92361C8500078DA89 /* Storyboard */,
@@ -142,7 +206,8 @@
 		E25A649A23600C930072C1F1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E25A64A323600D5F0072C1F1 /* SongsDataModel.swift */,
+				E225FAB623676E9900D9A2EB /* Payment */,
+				E225FAB723676EA100D9A2EB /* Songs */,
 				E25A64A223600D5F0072C1F1 /* ServerManager.swift */,
 				E25A64A123600D5F0072C1F1 /* ServerManagerRequestHandler.swift */,
 			);
@@ -152,6 +217,8 @@
 		E25A649B23600C9B0072C1F1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E28D5CD2236771DE0066D440 /* Card */,
+				E225FAAF23676D1400D9A2EB /* SavedPaymentMethodsCell */,
 				E25A64B2236158E20072C1F1 /* PlaylistCell */,
 			);
 			path = View;
@@ -171,6 +238,8 @@
 			children = (
 				E25A648A23600C730072C1F1 /* PlaylistViewController.swift */,
 				E248BEE72361C7860078DA89 /* ErrorViewController.swift */,
+				E28D5CDD236772EE0066D440 /* PaymentViewController.swift */,
+				E28D5CDF236772FD0066D440 /* AddCardViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +261,7 @@
 				E25A64AF23614FD70072C1F1 /* UIImageView + Extensions.swift */,
 				E248BEEC2361F5C60078DA89 /* UIImage + Extension.swift */,
 				E248BEFA2364274B0078DA89 /* UIViewController + Extensions.swift */,
+				E28D5CE123677BC00066D440 /* UITextField + Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -203,6 +273,33 @@
 				E25A64AB23614CFD0072C1F1 /* PlaylistCell.xib */,
 			);
 			path = PlaylistCell;
+			sourceTree = "<group>";
+		};
+		E28D5CD2236771DE0066D440 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				E28D5CD3236771DE0066D440 /* Multiple Fields */,
+				E28D5CD6236771DE0066D440 /* Normal Cell */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		E28D5CD3236771DE0066D440 /* Multiple Fields */ = {
+			isa = PBXGroup;
+			children = (
+				E28D5CD4236771DE0066D440 /* MultipleFieldFormCell.swift */,
+				E28D5CD5236771DE0066D440 /* MultipleFieldFormCell.xib */,
+			);
+			path = "Multiple Fields";
+			sourceTree = "<group>";
+		};
+		E28D5CD6236771DE0066D440 /* Normal Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E28D5CD7236771DE0066D440 /* SingleFieldFormCell.xib */,
+				E28D5CD8236771DE0066D440 /* SingleFieldFormCell.swift */,
+			);
+			path = "Normal Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +364,12 @@
 			files = (
 				E248BF0023644AF20078DA89 /* Error.png in Resources */,
 				E25A649323600C740072C1F1 /* LaunchScreen.storyboard in Resources */,
+				E28D5CDB236771DE0066D440 /* SingleFieldFormCell.xib in Resources */,
 				E25A649023600C740072C1F1 /* Assets.xcassets in Resources */,
+				E225FAB523676D8900D9A2EB /* SavedPaymentMethods.xib in Resources */,
 				E248BEF12361F9C40078DA89 /* SongPlaying.gif in Resources */,
 				E25A648E23600C730072C1F1 /* Main.storyboard in Resources */,
+				E28D5CDA236771DE0066D440 /* MultipleFieldFormCell.xib in Resources */,
 				E25A64AD23614CFD0072C1F1 /* PlaylistCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,14 +429,22 @@
 				E25A64A623600D5F0072C1F1 /* SongsDataModel.swift in Sources */,
 				E25A648B23600C730072C1F1 /* PlaylistViewController.swift in Sources */,
 				E248BEED2361F5C60078DA89 /* UIImage + Extension.swift in Sources */,
+				E28D5CDC236771DE0066D440 /* SingleFieldFormCell.swift in Sources */,
+				E28D5CDE236772EE0066D440 /* PaymentViewController.swift in Sources */,
 				E248BEFD23642C8B0078DA89 /* ReachabilityTest.swift in Sources */,
 				E248BEFB2364274B0078DA89 /* UIViewController + Extensions.swift in Sources */,
 				E248BEE82361C7860078DA89 /* ErrorViewController.swift in Sources */,
 				E25A648723600C730072C1F1 /* AppDelegate.swift in Sources */,
 				E25A64B023614FD70072C1F1 /* UIImageView + Extensions.swift in Sources */,
+				E28D5CE223677BC00066D440 /* UITextField + Extensions.swift in Sources */,
+				E225FAB923676EB500D9A2EB /* SavedCards.swift in Sources */,
+				E28D5CE0236772FD0066D440 /* AddCardViewController.swift in Sources */,
+				E28D5CD9236771DE0066D440 /* MultipleFieldFormCell.swift in Sources */,
 				E25A64A523600D5F0072C1F1 /* ServerManager.swift in Sources */,
+				E225FABD2367700100D9A2EB /* CardTypes.swift in Sources */,
 				E25A648923600C730072C1F1 /* SceneDelegate.swift in Sources */,
 				E25A64AC23614CFD0072C1F1 /* PlaylistCell.swift in Sources */,
+				E225FAB423676D8900D9A2EB /* SavedPaymentMethods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

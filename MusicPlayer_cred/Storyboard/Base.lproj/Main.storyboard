@@ -37,7 +37,7 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isScrollEnabled" value="YES"/>
                                             <userDefinedRuntimeAttribute type="size" keyPath="itemSize">
-                                                <size key="value" width="280" height="280"/>
+                                                <size key="value" width="250" height="250"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isInfinite" value="NO"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="interitemSpacing">
@@ -212,6 +212,114 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
+        </scene>
+        <!--Saved Cards-->
+        <scene sceneID="VdU-BI-9rT">
+            <objects>
+                <viewController storyboardIdentifier="PaymentViewController" id="s73-KZ-all" customClass="PaymentViewController" customModule="MusicPlayer_cred" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RQg-hB-xsc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q7s-ri-l3s">
+                                <rect key="frame" x="20" y="44" width="374" height="699"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="s73-KZ-all" id="gJf-Ok-HSq"/>
+                                    <outlet property="delegate" destination="s73-KZ-all" id="Yg4-vw-roC"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYh-g6-VYf">
+                                <rect key="frame" x="20" y="773" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.49803921568627452" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jIR-Gu-QY2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Add new card">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addNewCardAction:" destination="s73-KZ-all" eventType="touchUpInside" id="2Aj-cc-3nE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eYh-g6-VYf" firstAttribute="bottom" secondItem="CqT-yf-yhp" secondAttribute="bottom" constant="-39" id="4QW-BN-8bX"/>
+                            <constraint firstItem="CqT-yf-yhp" firstAttribute="trailing" secondItem="eYh-g6-VYf" secondAttribute="trailing" constant="20" id="B6t-Xz-1xj"/>
+                            <constraint firstItem="CqT-yf-yhp" firstAttribute="trailing" secondItem="q7s-ri-l3s" secondAttribute="trailing" constant="20" id="XCd-Kb-rh8"/>
+                            <constraint firstItem="q7s-ri-l3s" firstAttribute="leading" secondItem="CqT-yf-yhp" secondAttribute="leading" constant="20" id="duk-sP-Jp5"/>
+                            <constraint firstItem="q7s-ri-l3s" firstAttribute="top" secondItem="CqT-yf-yhp" secondAttribute="top" id="kJE-Rx-ElH"/>
+                            <constraint firstItem="eYh-g6-VYf" firstAttribute="top" secondItem="q7s-ri-l3s" secondAttribute="bottom" constant="30" id="qvJ-eS-poZ"/>
+                            <constraint firstItem="eYh-g6-VYf" firstAttribute="leading" secondItem="CqT-yf-yhp" secondAttribute="leading" constant="20" id="uON-S4-B0Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CqT-yf-yhp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Saved Cards" id="6Ok-g0-sgV"/>
+                    <connections>
+                        <outlet property="addNewCard" destination="eYh-g6-VYf" id="2qH-g4-ACJ"/>
+                        <outlet property="savedCardsList" destination="q7s-ri-l3s" id="Hxb-cP-Ra8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qa7-Us-IOy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2181.1594202898555" y="113.83928571428571"/>
+        </scene>
+        <!--Add New Card-->
+        <scene sceneID="VLV-pe-R9b">
+            <objects>
+                <viewController storyboardIdentifier="AddCardViewController" id="Zej-6y-6lZ" customClass="AddCardViewController" customModule="MusicPlayer_cred" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fab-Xf-nEA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uFb-op-n7J">
+                                <rect key="frame" x="20" y="44" width="374" height="699"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Zej-6y-6lZ" id="EyX-6d-v9l"/>
+                                    <outlet property="delegate" destination="Zej-6y-6lZ" id="Tvc-m0-5nS"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbs-bn-0AR">
+                                <rect key="frame" x="20" y="773" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.49803921568627452" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Crs-lX-vqO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Save Card">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveCardAction:" destination="Zej-6y-6lZ" eventType="touchUpInside" id="LTG-VN-PAt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uFb-op-n7J" firstAttribute="top" secondItem="LfO-eN-9nS" secondAttribute="top" id="1a6-Vh-QyH"/>
+                            <constraint firstItem="uFb-op-n7J" firstAttribute="leading" secondItem="LfO-eN-9nS" secondAttribute="leading" constant="20" id="59v-Rj-xVr"/>
+                            <constraint firstItem="fbs-bn-0AR" firstAttribute="top" secondItem="uFb-op-n7J" secondAttribute="bottom" constant="30" id="Fcy-I5-4PT"/>
+                            <constraint firstItem="LfO-eN-9nS" firstAttribute="trailing" secondItem="uFb-op-n7J" secondAttribute="trailing" constant="20" id="Hma-H4-EQB"/>
+                            <constraint firstItem="fbs-bn-0AR" firstAttribute="leading" secondItem="LfO-eN-9nS" secondAttribute="leading" constant="20" id="X2c-vk-fWC"/>
+                            <constraint firstItem="fbs-bn-0AR" firstAttribute="bottom" secondItem="LfO-eN-9nS" secondAttribute="bottom" constant="-39" id="os1-i8-qfb"/>
+                            <constraint firstItem="LfO-eN-9nS" firstAttribute="trailing" secondItem="fbs-bn-0AR" secondAttribute="trailing" constant="20" id="sxm-CC-6bE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LfO-eN-9nS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add New Card" id="X8S-eO-fGf"/>
+                    <connections>
+                        <outlet property="addCard" destination="fbs-bn-0AR" id="u7M-MF-FI7"/>
+                        <outlet property="addCardForm" destination="uFb-op-n7J" id="N99-1M-MyN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mqd-VJ-7GW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3208.6956521739135" y="107.8125"/>
         </scene>
         <!--Error View Controller-->
         <scene sceneID="6e6-5h-vMr">
