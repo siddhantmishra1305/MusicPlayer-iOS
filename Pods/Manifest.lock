@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.9.0)
+  - AlamofireObjectMapper (5.2.1):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - FSPagerView (0.8.3)
+  - ObjectMapper (3.5.1)
+
+DEPENDENCIES:
+  - AlamofireObjectMapper (~> 5.2)
+  - FSPagerView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
+    - FSPagerView
+    - ObjectMapper
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+
+PODFILE CHECKSUM: d1450994c53a19ac4b5b5b3af43ff58a7dfdc133
+
+COCOAPODS: 1.7.1
