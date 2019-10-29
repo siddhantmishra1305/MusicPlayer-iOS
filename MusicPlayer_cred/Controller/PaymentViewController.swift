@@ -34,18 +34,33 @@ class PaymentViewController: UIViewController {
 }
 
 extension PaymentViewController:UITableViewDataSource,UITableViewDelegate{
+   
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return cards.count
+    }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = .clear
+        return view
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 20
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return cards.count
+            return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = tableView.dequeueReusableCell(withIdentifier: "SavedPaymentMethods", for: indexPath) as! SavedPaymentMethods
-         cell.cardData = cards[indexPath.row]
+        cell.cardData = cards[indexPath.section]
          return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 73
+        return 200
     }
 }
 

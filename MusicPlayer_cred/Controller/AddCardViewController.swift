@@ -77,11 +77,12 @@ class AddCardViewController: UIViewController {
         
         let (type,status) = cardNumberCell.nameTf.validateCreditCardFormat()
         
-        if status{
+        if status && type != nil{
             cardDetail.cardNumber = cardNumber
             cardDetail.type = type
         }else{
             self.showAlert(Title: "Alert", Message: "Card not supported")
+            return
         }
         
         guard let expiryDate = expiryCell.tf1.text else{
@@ -100,7 +101,9 @@ class AddCardViewController: UIViewController {
                 self.showAlert(Title: "Alert", Message: "Invalid CVV")
                 return
             }
+        
         self.navigationController?.popViewController(animated: true)
+        
         self.card_Delegate?.cardAdded(card: cardDetail)
         
     }
