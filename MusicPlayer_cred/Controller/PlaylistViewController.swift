@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  MusicPlayer_cred
 //
-//  Created by Siddhant Mishra on 23/10/19.
+//  Created by Siddhant Mishra on 30/10/19.
 //  Copyright © 2019 Siddhant Mishra. All rights reserved.
 //
 
@@ -226,7 +226,7 @@ extension PlaylistViewController: FSPagerViewDataSource,FSPagerViewDelegate{
     }
     
     func pagerView(_ pagerView: FSPagerView, willDisplay cell: FSPagerViewCell, forItemAt index: Int) {
-       if let url = songs![index]?.cover_image{
+        if let url = songs![index]?.cover_image{
             backgroundCover.imageFromServerURL(url, placeHolder: nil)
         }
     }

@@ -1,8 +1,8 @@
 //
 //  BeerDataModel.swift
-//  BeerCraft
+//  MusicPlayer_cred
 //
-//  Created by Siddhant Mishra on 27/07/19.
+//  Created by Siddhant Mishra on 30/10/19
 //  Copyright © 2019 Siddhant Mishra. All rights reserved.
 //
 
